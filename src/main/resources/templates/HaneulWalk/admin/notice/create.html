@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항 관리</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5dc; /* 배경색 */
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+        .header, .search-buttons, .form-group, .form-actions {
+            margin-bottom: 20px;
+        }
+        .search-buttons button {
+            margin-right: 10px;
+        }
+        .toggle-switch {
+            display: flex;
+            align-items: center;
+        }
+        .toggle-switch input {
+            margin-right: 10px;
+        }
+        .form-actions button {
+            width: 100%;
+            padding: 10px;
+            background-color: #a08265;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button>공지사항 관리</button>
+        </div>
+        <div class="search-buttons">
+            <button>검색</button>
+            <button>검색</button>
+            <button>검색</button>
+        </div>
+        <div class="form-group">
+            <label for="tag">태그</label>
+            <select id="tag">
+                <option value="">태그 선택</option>
+                <!-- 추가 태그 옵션들 -->
+            </select>
+        </div>
+        <div class="form-group toggle-switch">
+            <input type="checkbox" id="fixed" checked>
+            <label for="fixed">상단고정</label>
+        </div>
+        <div class="form-group">
+            <label for="title">제목을 입력하세요</label>
+            <input type="text" id="title" placeholder="제목을 입력하세요" style="width: 100%; padding: 10px;">
+        </div>
+        <div class="form-group">
+            <label for="content">내용을 입력하세요</label>
+            <textarea id="content" placeholder="내용을 입력하세요" style="width: 100%; height: 100px; padding: 10px;"></textarea>
+        </div>
+        <div class="form
