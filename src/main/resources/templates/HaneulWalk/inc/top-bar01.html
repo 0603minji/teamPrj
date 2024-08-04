@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            background-color: rgba(211, 230, 254, 1);
+            max-width: 400px;
+            margin: 0;
+            padding-left: 10px;
+            border: 1px solid rgb(29, 18, 18);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header button {
+            background-color: #d3d3d3;
+            border: none;
+            margin: 10px;
+            padding: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header th:fragment="top-bar01" class="header">
+        <nav>
+            <h1>상단바</h1>
+            <a href=""><button>←</button></a>
+            <a href=""><button>카테고리</button></a>
+            <a href=""><button>버튼</button></a>
+            <a href=""><button>버튼</button></a>
+            <a href=""><button>버튼</button></a>
+        </nav>
+    </header>
+</body>
+
+</html>

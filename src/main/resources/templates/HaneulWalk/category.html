@@ -1,223 +1,82 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="~{HaneulWalk/inc/layout01}">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>페이지 타이틀</title>
+  <title>카테고리 페이지</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: url('background-image.jpg') no-repeat center center fixed;
-      background-size: cover;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     .container {
-      width: 375px;
-      margin: 0 auto;
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .header button {
-      background-color: #d3d3d3;
-      border: none;
+      max-width: 400px;
+      margin: 0;
+      background-color: rgba(249, 251, 240, 1);
       padding: 10px;
-      font-size: 16px;
-      cursor: pointer;
+    
     }
+
+
     .profile {
       display: flex;
       align-items: center;
       padding: 10px 0;
     }
+
     .profile img {
       border-radius: 50%;
       width: 50px;
       height: 50px;
       margin-right: 10px;
     }
-    .profile .info {
-      display: flex;
-      flex-direction: column;
-    }
+
     .section {
       margin: 20px 0;
       border-top: 1px solid #ddd;
       padding-top: 10px;
     }
-    .section h2 {
-      margin: 0;
-      padding-bottom: 10px;
-    }
+
     .section ul {
       list-style-type: none;
       padding: 0;
     }
+
     .section ul li {
       padding: 10px 0;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid #130505;
     }
-    .footer {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 20px;
-    }
-    .footer button {
-      background: none;
-      border: none;
-      font-size: 24px;
-      cursor: pointer;
-    }
+
 
   </style>
 </head>
-<body>
-<div class="container">
-  <div class="header">
-    <button>&#8592;</button>
-    <button>검색</button>
-    <button>검색</button>
-    <button>검색</button>
-  </div>
-  <div class="profile">
-    <img src=" " alt="Profile Picture">
-    <div class="info">
-      <strong>로그인 하기</strong>
-    </div>
-  </div>
-  <div class="section">
-    <h2>전체 서비스 &#128062;</h2>
-    <ul>
-      <li>장례서비스 업체 정보</li>
-      <li>온라인 추모관</li>
-      <li>추억 다이어리</li>
-      <li>애도작품 콘테스트</li>
-    </ul>
-  </div>
-  <div class="section">
-    <h2>고객지원 &#128062;</h2>
-    <ul>
-      <li>공지사항</li>
-      <li>자주묻는질문</li>
-      <li>1:1 문의</li>
-      <li>회원 탈퇴</li>
-      <li>로그아웃</li>
-    </ul>
-  </div>
-  <div class="section">
-    <h2>고객지원 &#128062;</h2>
-    <ul>
-      <li>공지사항</li>
-      <li>자주묻는질문</li>
-      <li>1:1 문의</li>
-      <li>회원 탈퇴</li>
-      <li>로그아웃</li>
-    </ul>
-  </div>
-  <div class="section">
-    <h2>고객지원 &#128062;</h2>
-    <ul>
-      <li>공지사항</li>
-      <li>자주묻는질문</li>
-      <li>1:1 문의</li>
-      <li>회원 탈퇴</li>
-      <li>로그아웃</li>
-    </ul>
-  </div>
-  <div class="section">
-    <h2>고객지원 &#128062;</h2>
-    <ul>
-      <li>공지사항</li>
-      <li>자주묻는질문</li>
-      <li>1:1 문의</li>
-      <li>회원 탈퇴</li>
-      <li>로그아웃</li>
-    </ul>
-  </div>
-  <div class="section">
-    <h2>고객지원 &#128062;</h2>
-    <ul>
-      <li>공지사항</li>
-      <li>자주묻는질문</li>
-      <li>1:1 문의</li>
-      <li>회원 탈퇴</li>
-      <li>로그아웃</li>
-    </ul>
-  </div>
-  <div class="section">
-    <h2>고객지원 &#128062;</h2>
-    <ul>
-      <li>공지사항</li>
-      <li>자주묻는질문</li>
-      <li>1:1 문의</li>
-      <li>회원 탈퇴</li>
-      <li>로그아웃</li>
-    </ul>
-  </div>
-  <div class="section">
-    <h2>고객지원 &#128062;</h2>
-    <ul>
-      <li>공지사항</li>
-      <li>자주묻는질문</li>
-      <li>1:1 문의</li>
-      <li>회원 탈퇴</li>
-      <li>로그아웃</li>
-    </ul>
-  </div>
-  <div class="section">
-    <h2>고객지원 &#128062;</h2>
-    <ul>
-      <li>공지사항</li>
-      <li>자주묻는질문</li>
-      <li>1:1 문의</li>
-      <li>회원 탈퇴</li>
-      <li>로그아웃</li>
-    </ul>
-  </div>
-  <div class="section">
-    <h2>고객지원 &#128062;</h2>
-    <ul>
-      <li>공지사항</li>
-      <li>자주묻는질문</li>
-      <li>1:1 문의</li>
-      <li>회원 탈퇴</li>
-      <li>로그아웃</li>
-    </ul>
-  </div>
-  <div class="section">
-    <h2>고객지원 &#128062;</h2>
-    <ul>
-      <li>공지사항</li>
-      <li>자주묻는질문</li>
-      <li>1:1 문의</li>
-      <li>회원 탈퇴</li>
-      <li>로그아웃</li>
-    </ul>
-  </div>
-  <div class="section">
-    <h2>고객지원 &#128062;</h2>
-    <ul>
-      <li>공지사항</li>
-      <li>자주묻는질문</li>
-      <li>1:1 문의</li>
-      <li>회원 탈퇴</li>
-      <li>로그아웃</li>
-    </ul>
-  </div>
 
-  <div class="footer">
-    <button>&#128247;</button>
-    <button>&#127942;</button>
-    <button>&#127968;</button>
-    <button>&#9776;</button>
+<body>
+  <div class="container" layout:fragment="main">
+
+    <header class="profile">
+      <img src="pic.jpeg" alt="프로필 사진">
+      <a href="">로그인 하기</a>
+    </header>
+
+    <nav class="section">
+      <h1>전체 서비스</h1>
+      <ul>
+        <li>장례서비스 업체 정보</li>
+        <li>온라인 추모관</li>
+        <li>추억 다이어리</li>
+        <li>애도작품 콘테스트</li>
+      </ul>
+    </nav>
+
+    <nav class="section">
+      <h1>고객지원</h1>
+      <ul>
+        <li>공지사항</li>
+        <li>자주묻는질문</li>
+        <li>1:1 문의</li>
+      </ul>
+      <div class="section">로그아웃</div>
+    </nav>
   </div>
-</div>
 </body>
+
 </html>

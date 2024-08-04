@@ -5,12 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .aside {
+            background-color: rgba(211, 230, 254, 1);
+            max-width: 400px;
+            margin: 0;
+            padding-left: 10px;
+            border: 1px solid rgb(29, 18, 18);
+        }
+    </style>
 </head>
 
 <body>
-    <aside th:fragment="bottom-bar">
+    <aside th:fragment="bottom-bar" class="aside">
         <h1>하단바</h1>
-        <ul class="bottom-bar">
+        <ul>
             <li><a href="">다이어리</a></li>
             <li><a href="">콘테스트</a></li>
             <li><a href="">홈</a></li>

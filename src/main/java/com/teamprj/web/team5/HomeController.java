@@ -5,11 +5,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 
 @Controller
-
 public class HomeController {
-    @GetMapping("haneulwalk")
-    public String home(){
+    
+    @GetMapping("haneulwalk/index")
+    public String homeIndex(){
         return "HaneulWalk/index";
     }
     
+    @GetMapping("haneulwalk/category")
+    public String category(){
+        return "HaneulWalk/category";
+    }
 }
