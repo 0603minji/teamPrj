@@ -1,72 +1,52 @@
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-}
 .container {
-    width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
-    text-align: center;
-}
-.top-bar {
-    background-color: #ddeafc;
     padding: 20px;
-    text-align: left;
-}
-.top-bar h1 {
-    margin: 0;
-    font-size: 20px;
-}
-.top-bar p {
-    margin: 0;
-    font-size: 14px;
-    color: #666;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.funeral-link{
-    background-image: url(/src/main/resources/templates/HaneulWalk/haneulWalk-파일계층/images/img01.jpeg);
-    background-repeat: no-repeat;
-    background-size:contain;
-}
-.funeral-link a{
-    display: inline-block;
-    height: 100px;
-    width: 100%;
-}
-.content {
-    padding: 20px;
-}
-.content img {
-    width: 100px;
-    border-radius: 50%;
-}
-.section {
-    margin: 20px 0;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-.section img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.bottom-bar {
-    display: flex;
-    justify-content:space-around;
-    padding: 10px 0;
-    background-color: #ddeafc;
-}
-.bottom-bar div {
-    width: 40px;
-    height: 40px;
-    background-color: #eee4cb;
-    border-radius: 30%;
+.item {
+    max-width: 500px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: baseline;
+    padding: 20px;
+    margin-right: 35px;
+    margin-bottom: 30px;
+    border: 1px solid rgb(29, 18, 18);
+    background-color: rgb(246, 246, 231);
+}
+
+.item img {
+    width: 150px;
+    height: 150px;
+}
+
+.note {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-right: 35px;
+    padding-left: 20px;
+    background-color: rgb(246, 246, 231);
+    ;
+    border: 1px solid rgb(29, 18, 18);
+}
+
+
+.note ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.note ul li {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.note ul li::before {
+    content: "※";
+    margin-right: 5px;
 }
