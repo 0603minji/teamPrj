@@ -11,5 +11,10 @@ public class HomeController {
     public String home(){
         return "HaneulWalk/index";
     }
+
+    @GetMapping("gallery")
+    public String gallery(){
+        return "HaneulWalk/gallery/index";
+    }
     
 }
