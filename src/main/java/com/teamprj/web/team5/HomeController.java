@@ -19,6 +19,11 @@ public class HomeController {
 
     }
 
+    @GetMapping("haneulwalk/diary/index")
+    public String diaryIndex(){
+        return "HaneulWalk/diary/index";
+    }
+
     @GetMapping("haneulwalk/gallery")
     public String gallery(){
         return "HaneulWalk/gallery/index";
