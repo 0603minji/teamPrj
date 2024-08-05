@@ -12,19 +12,13 @@ public class HomeController {
         return "HaneulWalk/index";
     }
 
-    @GetMapping("gallery")
+    @GetMapping("haneulwalk/gallery")
     public String gallery(){
         return "HaneulWalk/gallery/index";
     }
     
-<<<<<<< HEAD
-    @GetMapping("guide")
-    public String guide(){
-        return "HaneulWalk/gallery/guide";
-=======
     @GetMapping("haneulwalk/category")
     public String category(){
         return "HaneulWalk/category";
->>>>>>> aec75bd985051643da420e2fc8a68eaee91dccc3
     }
 }
