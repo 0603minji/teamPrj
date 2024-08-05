@@ -17,4 +17,8 @@ public class HomeController {
         return "HaneulWalk/gallery/index";
     }
     
+    @GetMapping("guide")
+    public String guide(){
+        return "HaneulWalk/gallery/guide";
+    }
 }
