@@ -1,34 +1,113 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org"
-xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-layout:decorate="~{HaneulWalk/inc/layout}">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{HaneulWalk/inc/layout-main}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>하늘 산책</title>
-    <link rel="stylesheet"  th:href="@{/css/style.css}">
+    <title>하늘산책 홈 페이지</title>
+    <style>
+        .container {
+            margin: 0;
+            width: 400px;
+            padding-bottom: 30px;
+            background-color: rgb(238, 238, 211);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .main img{
+            width: 400px;
+            height: 450px;
+        }
 
+        .item {
+            width: 300px;
+            margin: 0 auto;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 30px;
+            margin-right: 40px;
+            border: 1px solid rgb(29, 18, 18);
+            background-color: rgb(212, 230, 208);
+            display: flex;
+        }
+
+        .item img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .notice {
+            width: 300px;
+            margin: 0 auto;
+            align-items: center;
+            margin-right: 40px;
+            padding: 10px;
+            border: 1px solid rgb(29, 18, 18);
+            background-color: rgb(212, 230, 208);
+        }
+
+
+        .notice ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .notice ul li {
+            margin: 5px 0;
+            font-size: 15px;
+        }
+
+        .notice ul li::before {
+            content: "※";
+            margin-right: 5px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-       <main layout:fragment="main">
-            <div class="funeral-link">
-                <a href="">장례서비스 업체 제공 소개글</a>
-            </div>
-            <div class="section">
-                <p>온라인 추모관 소개글</p>
-            </div>
-            <div class="section">
-                <img src="diary.jpg" alt="Diary">
-                <p>추억다이어리 소개글</p>
-            </div>
-            <div class="section">
-                <p>애도작품 콘테스트 소개글</p>
-            </div>
-        </main>
-    </div>
+    <section class="container" layout:fragment="main">
+        <div class="main img">
+            <img src="/images/pet02.jpeg" alt="대표 이미지">
+        </div>
+
+
+        <nav>
+            <ul>
+                <li class="item">
+                    <a href="">
+                        <img src="/images/pet05.jpeg" alt="funeral">
+                        반려동물 장례식장 소개글
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="">
+                        <img src="/images/pet06.jpeg" alt="gallery">
+                        온라인 추모관 소개글
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="">
+                        <img src="/images/pet05.jpeg" alt="diary">
+                        추억 다이어리 소개글
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="">
+                        <img src="/images/pet06.jpeg" alt="contest">
+                        애도작품 콘테스트 소개글
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section class="notice">
+            <h1>Notice</h1>
+            <ul>
+                <li>[콘테스트] 8월 수상작 발표</li>
+                <li>[온라인 추모관] 온라인 추모관 사용안내</li>
+                <li>[저널] 반려동물 사후 대처법</li>
+            </ul>
+        </section>
+    </section>
 </body>
 
 </html>
