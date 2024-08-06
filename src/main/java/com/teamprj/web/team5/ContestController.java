@@ -20,4 +20,8 @@ public class ContestController {
     public String contestList(){
         return "HaneulWalk/contest/list";
     }
+    @GetMapping("feed")
+    public String contestFeed(){
+        return "HaneulWalk/contest/feed";
+    }
 }
