@@ -1,11 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{HaneulWalk/inc/layout}">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>/contest/list (민석)</title>
+    <title>콘테스트 리스트</title>
+    <style>
+        .container {
+            max-width: 350px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-bottom: 10px;
+            background-color: rgb(238, 238, 211);
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            padding-top: 20px;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+        }
+
+        .section {
+            margin: 20px 0;
+            border-top: 1px solid #a1a1a1;
+            padding-top: 10px;
+        }
+
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .section ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #130505;
+        }
+
+        .subject {
+            background-color: aquamarine;
+        }
+
+        .thumbnails {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .thumbnails>div {
+            flex-grow: 1;
+            width: 110px;
+            height: 110px;
+            max-width: 110px;
+        }
+
+        .thumbnails>div>a>img {
+
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="container" layout:fragment="main">
+
+        <header class="subject">
+            <p>이 달의 제시어</p>
+            <p>마지막 산책</p>
+        </header>
+
+        <sectoin class="section">
+            <h1>추모작품목록</h1>
+
+            <div class="sort">
+                <label>
+                    정렬
+                    <select name="sort">
+                        <option value="">최신순</option>
+                        <option value="">좋아요순</option>
+                        <option value="">오래된순</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="thumbnails">
+                <div>
+                    <a href=""><img src="/images/whity.jpg" alt="thumbnail"></a>
+                </div>
+                <div>
+                    <a href=""><img src="/images/whity.jpg" alt="thumbnail"></a>
+                </div>
+                <div>
+                    <a href=""><img src="/images/whity.jpg" alt="thumbnail"></a>
+                </div>
+                <div>
+                    <a href=""><img src="/images/whity.jpg" alt="thumbnail"></a>
+                </div>
+                <div>
+                    <a href=""><img src="/images/whity.jpg" alt="thumbnail"></a>
+                </div>
+                <div>
+                    <a href=""><img src="/images/whity.jpg" alt="thumbnail"></a>
+                </div>
+                <div>
+                    <a href=""><img src="/images/whity.jpg" alt="thumbnail"></a>
+                </div>
+                <div>
+                    <a href=""><img src="/images/whity.jpg" alt="thumbnail"></a>
+                </div>
+                <div>
+                    <a href=""><img src="/images/whity.jpg" alt="thumbnail"></a>
+                </div>
+                <div>
+                    <a href=""><img src="/images/whity.jpg" alt="thumbnail"></a>
+                </div>
+
+            </div>
+        </sectoin>
+
+    </div>
 </body>
+
 </html>

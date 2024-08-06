@@ -15,4 +15,9 @@ public class ContestController {
     public String contestCreate(){
         return "HaneulWalk/contest/create";
     }
+    
+    @GetMapping("list")
+    public String contestList(){
+        return "HaneulWalk/contest/list";
+    }
 }
