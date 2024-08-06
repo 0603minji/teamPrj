@@ -18,12 +18,11 @@ public class HomeController {
     public String category(){
         return "HaneulWalk/category";
     }
-    @GetMapping("contest/create")
-    public String contestCreate(){
-        return "HaneulWalk/contest/create";
-    }
+    
     @GetMapping("diary/index")
     public String diary(){
         return "HaneulWalk/diary/index";
-    } 
+    }
+    
+    
 }
