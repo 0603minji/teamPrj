@@ -12,11 +12,9 @@ public class HomeController {
         return "HaneulWalk/funeral/list";
     }
 
-    
     @GetMapping("haneulwalk/index")
     public String homeIndex(){
         return "HaneulWalk/index";
-
     }
     
     @GetMapping("haneulwalk/category")
