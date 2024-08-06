@@ -6,14 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class HomeController {
-
-    @GetMapping("haneulwalk/funeral/list")
-    public String funeral(){
-        return "HaneulWalk/funeral/list";
-    }
-
-    
-    @GetMapping("haneulwalk/index")
+     @GetMapping("haneulwalk/index")
     public String homeIndex(){
         return "HaneulWalk/index";
 
@@ -23,4 +16,15 @@ public class HomeController {
     public String category(){
         return "HaneulWalk/category";
     }
+
+    @GetMapping("haneulwalk/contest/index")
+    public String contestIndex(){
+        return "HaneulWalk/contest/index";
+    }
+
+    @GetMapping("haneulwalk/funeral/list")
+    public String funeralList(){
+        return "HaneulWalk/funeral/list";
+    }
+
 }

@@ -14,7 +14,8 @@
             background-color: rgb(238, 238, 211);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .main img{
+
+        .main img {
             width: 400px;
             height: 450px;
         }
@@ -65,13 +66,15 @@
 </head>
 
 <body>
-    <section class="container" layout:fragment="main">
+    <div class="container" layout:fragment="main">
+
         <div class="main img">
             <img src="/images/pet02.jpeg" alt="대표 이미지">
         </div>
 
 
         <nav>
+            <h1>대표 서비스</h1>
             <ul>
                 <li class="item">
                     <a href="">
@@ -99,15 +102,20 @@
                 </li>
             </ul>
         </nav>
+
         <section class="notice">
-            <h1>Notice</h1>
+            <header>
+                <h1>Notice</h1>
+                <div><a href="">더보기</a></div>
+            </header>
+    
             <ul>
-                <li>[콘테스트] 8월 수상작 발표</li>
-                <li>[온라인 추모관] 온라인 추모관 사용안내</li>
-                <li>[저널] 반려동물 사후 대처법</li>
+                <li><a href="">[콘테스트] 8월 수상작 발표</a></li>
+                <li><a href="">[온라인 추모관] 온라인 추모관 사용안내</a></li>
+                <li><a href="">[저널] 반려동물 사후 대처법</a></li>
             </ul>
         </section>
-    </section>
+    </div>
 </body>
 
 </html>
