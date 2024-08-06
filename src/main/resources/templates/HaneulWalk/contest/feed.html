@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{./HaneulWalk/inc/layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애도작품 콘테스트 피드</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+
+</head>
+
+<body>
+    <main layout:fragment="main">
+
+        <section>
+            <h1>이달의 제시어</h1>
+            <strong>${제시어}</strong>
+        </section>
+
+        <article>
+            <header>
+                <h1>게시글1</h1>
+                <div>
+                    <div><img src="" alt="작성자 프로필"></div>
+                    <p>작성자 닉네임</p>
+                </div>
+            </header>
+
+            <div>
+                <img src="" alt="게시글1 게시한 사진">
+            </div>
+
+            <section class="like-container">
+                <h1>좋아요 버튼</h1>
+                <button class="feed-like-button">
+                    <svg aria-label="좋아요" class="feed-like-icon-default" fill="currentColor" height="24" role="img"
+                        viewBox="0 0 24 24" width="24">
+                        <path></path>
+                    </svg>
+                </button>
+            </section>
+
+            <!-- 좋아요 수 -->
+            <div class="like-count" id="likeCount">7</div>
+
+            <section class="feed-container">
+                <h1>댓글 버튼</h1>
+                <button class="feed-comment-button">
+                    <a href="">
+                        <svg aria-label="댓글" class="feed-comment-icon" fill="currentColor" height="24" role="img"
+                            viewBox="0 0 24 24" width="24">
+                            <path></path>
+                        </svg>
+                    </a>
+                </button>
+
+            </section>
+
+            <!-- 댓글 수 -->
+            <div class="like-count" id="likeCount">7</div>
+
+            <p>게시글1 내용</p>
+        </article>
+
+        <article>
+            <header>
+                <h1>게시글2</h1>
+                <div>
+                    <div><img src="" alt="작성자 프로필"></div>
+                    <p>작성자 닉네임</p>
+                </div>
+            </header>
+
+            <div>
+                <img src="" alt="게시글2 게시한 사진">
+            </div>
+
+            <section class="like-container">
+                <h1>좋아요 버튼</h1>
+                <button class="feed-like-button">
+                    <svg aria-label="좋아요" class="feed-like-icon-default" fill="currentColor" height="24" role="img"
+                        viewBox="0 0 24 24" width="24">
+                        <path></path>
+                    </svg>
+                </button>
+            </section>
+
+            <!-- 좋아요 수 -->
+            <div class="like-count" id="likeCount">200</div>
+
+            <section class="feed-container">
+                <h1>댓글 버튼</h1>
+                <button class="feed-comment-button">
+                    <a href="">
+                        <svg aria-label="댓글" class="feed-comment-icon" fill="currentColor" height="24" role="img"
+                            viewBox="0 0 24 24" width="24">
+                            <path></path>
+                        </svg>
+                    </a>
+                </button>
+
+            </section>
+
+            <!-- 댓글 수 -->
+            <div class="like-count" id="likeCount">200</div>
+
+            <p>게시글2 내용</p>
+        </article>
+
+    </main>
+</body>
+
+</html>
