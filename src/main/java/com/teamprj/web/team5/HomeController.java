@@ -21,4 +21,8 @@ public class HomeController {
     public String category(){
         return "HaneulWalk/category";
     }
+    @GetMapping("haneulwalk/contest/create")
+    public String contestCreate(){
+        return "HaneulWalk/contest/create";
+    }
 }
