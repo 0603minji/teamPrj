@@ -2,29 +2,32 @@ package com.teamprj.web.team5;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
+@RequestMapping("/haneulwalk")
 public class HomeController {
-     @GetMapping("haneulwalk/index")
+    
+    @GetMapping("index")
     public String homeIndex(){
         return "HaneulWalk/index";
-
     }
     
-    @GetMapping("haneulwalk/category")
+    @GetMapping("category")
     public String category(){
         return "HaneulWalk/category";
     }
-
-    @GetMapping("haneulwalk/contest/index")
+    @GetMapping("contest/create")
+    public String contestCreate(){
+        return "HaneulWalk/contest/create";
+    }
+    @GetMapping("diary/index")
+    public String diaryIndex(){
+        return "HaneulWalk/diary/index";
+    }
+    @GetMapping("contest/index")
     public String contestIndex(){
         return "HaneulWalk/contest/index";
-    }
-
-    @GetMapping("haneulwalk/funeral/list")
-    public String funeralList(){
-        return "HaneulWalk/funeral/list";
-    }
-
+    } 
 }
