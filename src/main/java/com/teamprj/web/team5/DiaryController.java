@@ -5,17 +5,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/haneulwalk")
-public class HomeController {
+@RequestMapping("/haneulwalk/diary")
+public class DiaryController {
    
     @GetMapping("index")
-    public String homeIndex(){
-        return "HaneulWalk/index";
+    public String funeral(){
+        return "HaneulWalk/diary/index";
     }
-
-    @GetMapping("category")
-    public String homeCategory(){
-        return "HaneulWalk/category";
-    }
-
 }

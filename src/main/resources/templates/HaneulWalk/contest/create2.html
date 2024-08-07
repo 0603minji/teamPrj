@@ -1,11 +1,14 @@
 <!DOCTYPE html>
+<<<<<<<<< Temporary merge branch 1
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
     layout:decorate="~{HaneulWalk/inc/layout-main}">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>콘테스트 작품등록</title>
 </head>
+
 <body>
     <main layout:fragment="main">
         <form>
@@ -21,8 +24,25 @@
                 <div>0/500</div>
             </fieldset>
         </form>
-        <button>작성완료</button>
+        <form method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>작품업로드</legend>
+                <label>이미지/영상을 추가해주세요<input multiple type="file"></label>
+            </fieldset>
+            <button>완료</button>
+        </form>
     </main>
+</body>
+
+=========
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/contest/create (재복)</title>
+</head>
+<body>
     
 </body>
+>>>>>>>>> Temporary merge branch 2
 </html>
