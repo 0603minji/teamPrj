@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{HaneulWalk/inc/layout-main}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>콘테스트 작품등록</title>
+</head>
+
+<body>
+    <main layout:fragment="main">
+        <section>
+            <h1>이달의 제시어</h1>
+            <p>마지막 산책</p>
+        </section>
+        <section>
+            <h1>작품편집기</h1>
+            <div>편집기</div>
+        </section>
+        <section>
+            <h1>업로드 항목</h1>
+            <form method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>업로드항목</legend>
+                    <label>이미지/영상을 추가해주세요<input multiple type="file"></label>
+                </fieldset>
+            </form>
+        </section>
+        <div><a href="edit2">다음단계</a></div>
+    </main>``
+</body>
+</html>

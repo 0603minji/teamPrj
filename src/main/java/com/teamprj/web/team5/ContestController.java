@@ -11,9 +11,13 @@ public class ContestController {
     public String contestIndex(){
         return "HaneulWalk/contest/index";
     }
-    @GetMapping("create")
-    public String contestCreate(){
-        return "HaneulWalk/contest/create";
+    @GetMapping("create1")
+    public String contestCreate1(){
+        return "HaneulWalk/contest/create1";
+    }
+    @GetMapping("create2")
+    public String contestCreate2(){
+        return "HaneulWalk/contest/create2";
     }
     
     @GetMapping("list")
