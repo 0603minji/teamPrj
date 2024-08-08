@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{HaneulWalk/inc/layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지 콘테스트 리스트</title>
+    <style>
+        .container {
+            width: 400px;
+            background-color: #e6f3e7;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .container h1 {
+            margin-left: 180px;
+            font-size: 20px;
+        }
+
+        .card {
+            width: 320px;
+            background-color: #8eae7a;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            display: flex;
+        }
+
+        .image {
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+
+        .info {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .title {
+            font-size: 15px;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .date {
+            font-size: 14px;
+            color: #000000;
+        }
+
+        .icon01 {
+            margin-right: 5px;
+            font-size: 14px;
+            color: #000000;
+        }
+
+        .icon02 {
+            width: 25px;
+            height: 25px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container" layout:fragment="main">
+        <section>
+            <h1>7월</h1>
+            <ul>
+                <li class="card">
+                    <img src="/images/pet03.jpeg" alt="작품이미지" class="image">
+                    <div class="info">
+                        <p class="title">안녕, 나의 작은 천사</p>
+                        <p class="date">2024.08.07</p>
+                        <div>
+                            <span class="icon01">❤️ 23</span>
+                            <span class="icon01">💬 17</span>
+                            <span class="icon01">👁️ 56</span>
+                        </div>
+                    </div>
+                    <div>
+                        <a href=""><img src="/images/more.png" alt="수정삭제아이콘" class="icon02"></a>
+                        <br>
+                        <br>
+                        <a href=""><img src="/images/arrow.png" alt="상세보기아이콘" class="icon02"></a>
+                    </div>
+                </li>
+                <li class="card">
+                    <img src="/images/pet03.jpeg" alt="작품이미지" class="image">
+                    <div class="info">
+                        <p class="title">안녕, 나의 작은 천사</p>
+                        <p class="date">2024.08.07</p>
+                        <div>
+                            <span class="icon01">❤️ 23</span>
+                            <span class="icon01">💬 17</span>
+                            <span class="icon01">👁️ 56</span>
+                        </div>
+                    </div>
+                    <div>
+                        <a href=""><img src="/images/more.png" alt="수정삭제아이콘" class="icon02"></a>
+                        <br>
+                        <br>
+                        <a href=""><img src="/images/arrow.png" alt="상세보기아이콘" class="icon02"></a>
+                    </div>
+                </li>
+            </ul>
+            </div>
+        </section>
+        <section>
+            <h1>8월</h1>
+            <ul>
+                <li class="card">
+                    <img src="/images/pet03.jpeg" alt="작품이미지" class="image">
+                    <div class="info">
+                        <p class="title">안녕, 나의 작은 천사</p>
+                        <p class="date">2024.08.07</p>
+                        <div>
+                            <span class="icon01">❤️ 23</span>
+                            <span class="icon01">💬 17</span>
+                            <span class="icon01">👁️ 56</span>
+                        </div>
+                    </div>
+                    <div>
+                        <a href=""><img src="/images/more.png" alt="수정삭제아이콘" class="icon02"></a>
+                        <br>
+                        <br>
+                        <a href=""><img src="/images/arrow.png" alt="상세보기아이콘" class="icon02"></a>
+                    </div>
+                </li>
+                <li class="card">
+                    <img src="/images/pet03.jpeg" alt="작품이미지" class="image">
+                    <div class="info">
+                        <p class="title">안녕, 나의 작은 천사</p>
+                        <p class="date">2024.08.07</p>
+                        <div>
+                            <span class="icon01">❤️ 23</span>
+                            <span class="icon01">💬 17</span>
+                            <span class="icon01">👁️ 56</span>
+                        </div>
+                    </div>
+                    <div>
+                        <a href=""><img src="/images/more.png" alt="수정삭제아이콘" class="icon02"></a>
+                        <br>
+                        <br>
+                        <a href=""><img src="/images/arrow.png" alt="상세보기아이콘" class="icon02"></a>
+                    </div>
+                </li>
+            </ul>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

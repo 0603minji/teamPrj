@@ -15,5 +15,10 @@ public class EditController {
     public String myContestEdit2(){
         return "HaneulWalk/member/my/contest/edit2";
     }
+
+    @GetMapping("list")
+    public String myContestList(){
+        return "HaneulWalk/member/my/contest/list";
+    }
 }
 
