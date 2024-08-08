@@ -5,24 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .aside {
-            padding-left: 10px;
-            background-color: rgba(153, 214, 243, 0.918);
-            width: 350px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            padding-left: 50px;
-
-
-        }
-    </style>
 </head>
 
 <body>
-    <aside th:fragment="bottom-bar" class="aside">
+    <aside th:fragment="bottom-bar">
         <h1>하단바</h1>
-        <ul>
+        <ul class="bottom-bar">
             <li><a href="">다이어리</a></li>
             <li><a href="">콘테스트</a></li>
             <li><a href="">홈</a></li>
