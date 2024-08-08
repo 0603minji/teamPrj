@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다이어리</title>
+    <style>
+        .header{
+            background-color:rgba(153, 214, 243, 0.918);
+            width: 350px;
+            padding-left: 30px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            display: flex;
+         
+        }
+
+        .header button {
+            background-color: #d3d3d3;
+            border: none;
+            font-size: 15px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header th:fragment="top-bar-diary" class="header">
+        <nav>
+            <h1>상단바</h1>
+            <a href=""><button>←</button></a>
+            <a href=""><button>페이지타이틀</button></a>
+            <a href=""><button>검색</button></a>
+            <a href=""><button>즐찾</button></a>
+            <a href=""><button>캘린더</button></a>
+        </nav>
+    </header>
+</body>
+
+</html>

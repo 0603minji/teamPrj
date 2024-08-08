@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{HaneulWalk/inc/layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>콘테스트 리스트</title>
+    <style>
+        .container {
+            max-width: 350px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-bottom: 10px;
+            /* background-color: rgb(238, 238, 211); */
+        }
+
+        .best3-box {
+            background-color: aquamarine;
+        }
+
+        .winner-box {
+            display: flex;
+        }
+        
+        .winner-box img {
+            width: 110px;
+            height: 110px;
+        }
+        
+        .list {
+            margin: 20px 0;
+            padding-top: 10px;
+            background-color: rgb(200, 230, 220);
+        }
+        
+        .subject {
+            background-color: aquamarine;
+        }
+
+        .sort {
+            background-color: aquamarine;
+        }
+
+        .thumbnails {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: aquamarine;
+        }
+
+        .thumbnails>div {
+            flex-grow: 1;
+            width: 110px;
+            height: 110px;
+            max-width: 110px;
+        }
+
+        .thumbnails>div>a>img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container" layout:fragment="main">
+
+        <nav class="best3-box">
+            <h1>24년 7월 수상작</h1>
+            <div class="winner-box">
+                <div><a href=""><img src="/images/whity.jpg" alt="1등"></a></div>
+                <div><a href=""><img src="/images/whity.jpg" alt="2등"></a></div>
+                <div><a href=""><img src="/images/whity.jpg" alt="3등"></a></div>
+            </div>
+        </section>
+
+
+
+        <section class="list">
+            <h1>추모작품목록</h1>
+
+            <section class="subject">
+                <h1>제시어</h1>
+                <form method="post">
+                    <label>
+                        년
+                        <select name="year">
+                            <option value="">24</option>
+                            <option value="">23</option>
+                            <option value="">22</option>
+                        </select>
+                    </label>
+                    <label>
+                        월
+                        <select name="month">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                        </select>
+                    </label>
+                    <button>년월 입력</button>
+                </form>
+                <p>주제 : 마지막 산책</p>                
+            </section>            
+
+            <section class="sort">
+                <h1>정렬</h1>
+                <form method="post">
+                    <label>
+                        정렬
+                        <select name="sort">
+                            <option value="">최신순</option>
+                            <option value="">좋아요순</option>
+                            <option value="">오래된순</option>
+                        </select>
+                        <button>입력</button>
+                    </label>
+                </form>
+            </section>
+
+            <nav >
+                <h1>썸네일들</h1>
+                <div class="thumbnails">                
+                    <div>
+                        <a href=""><img src="/images/whity.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="/images/whity.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="/images/whity.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="/images/whity.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="/images/whity.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="/images/whity.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="/images/whity.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="/images/whity.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="/images/whity.jpg" alt="thumbnail"></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="/images/whity.jpg" alt="thumbnail"></a>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+    </main>
+</body>
+
+</html>
