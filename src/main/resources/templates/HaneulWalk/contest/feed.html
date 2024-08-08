@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{./HaneulWalk/inc/layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애도작품 콘테스트 피드</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #dbdbdb;
+            margin: 0;
+        }
+
+        section,
+        article {
+            padding: 16px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #dbdbdb;
+        }
+
+        header h1 {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        header div {
+            display: flex;
+            align-items: center;
+            border-radius: 100%;
+            width: 70px;
+            height: 70px;
+        }
+
+        header img {
+            border-radius: 70%;
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+        }
+
+        header p {
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        header strong {
+            display: flex;
+        }
+
+        article div img {
+            width: 100%;
+            height: auto;
+            margin-top: 16px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .report {
+            margin-left: 160px;
+        }
+
+        .month {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+
+<body>
+<main layout:fragment="main">
+    <hr>
+    <section class="month">
+        <h1 class="hidden">월별 제시어</h1>
+        <strong>8月 제시어</strong>
+    </section>
+    <hr>
+    <article>
+        <header>
+            <h1 class="hidden">게시글1</h1>
+            <div class><img src="/images/face01.jpeg" alt="작성자 프로필"></div>
+            <p>이주빈</p>
+            <div class="report"><img src="" alt="신고하기"></div>
+        </header>
+
+        <div>
+            <img src="/images/pet01.jpeg" alt="게시글1 게시한 사진">
+        </div>
+
+        <section class="like-comment-box" style="display: flex">
+            <h1 style="display: none">좋아요 댓글</h1>
+
+            <section class="like-box" style="display: flex">
+                <h1 style="display: none">좋아요</h1>
+
+                <span>
+                    <button>❤️</button>
+                </span>
+                <div th:text="${likeCount}">좋아요 수</div>
+            </section>
+
+            <section class="comment-box" style="display: flex">
+                <h1 style="display: none">댓글</h1>
+
+                <span><a href="">💬</a></span>
+                <div th:text="${commentCount}">댓글 수</div>
+            </section>
+        </section>
+        <hr>
+        <p>게시글1 내용</p>
+    </article>
+
+
+    <!-- 다음 달 -->
+
+    <!-- 대충 영역 나눠놓기 -->
+    <hr>
+
+    <section class="month">
+        <h1 class="hidden">월별 제시어</h1>
+        <strong>9月 제시어</strong>
+    </section>
+
+
+    <hr>
+    <!-- 대충 영역 나눠놓기 -->
+
+
+    <article>
+        <header>
+            <h1 class="hidden">게시글2</h1>
+            <div class><img src="/images/face02.jpeg" alt="작성자 프로필"></div>
+            <p>한소희</p>
+            <div class="report"><img src="" alt="신고하기"></div>
+        </header>
+
+        <div>
+            <img src="/images/pet02.jpeg" alt="게시글1 게시한 사진">
+        </div>
+
+        <section class="like-comment-box" style="display: flex">
+            <h1 style="display: none">좋아요 댓글</h1>
+
+            <section class="like-box" style="display: flex">
+                <h1 style="display: none">좋아요</h1>
+
+                <span>
+                    <button>❤️</button>
+                </span>
+                <div th:text="${likeCount}">좋아요 수</div>
+
+            </section>
+
+            <section class="comment-box" style="display: flex">
+                <h1 style="display: none">댓글</h1>
+
+                <span><a href="">💬</a></span>
+                <div th:text="${commentCount}">댓글 수</div>
+
+            </section>
+        </section>
+
+
+        <hr>
+
+        <p>게시글2 내용</p>
+    </article>
+
+</main>
+</body>
+
+</html>
